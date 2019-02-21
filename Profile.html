@@ -9,22 +9,22 @@
 <body>
 <div class="page">
     <div class="form">
+        <h2 align="center">Создание профиля</h2>
         <form class="my_flex_container">
             <div>
-                <div class="my_flex_block">
-                    <input type="file" placeholder="Фотография" accept="image/*">
+                <div class="image my_flex_block">
+                    <input type="" placeholder="Фотография" accept="image/*">
+                    <button class="upload">Загрузить</button>
                 </div>
                 <div class="my_flex_block">
-                    <input type="text" placeholder="Имя"/>
-                    <input type="text" placeholder="Фамилия"/>
-                    <input type="tel" placeholder="Телефон"  pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" />
+                    <input type="text" placeholder="Имя" required/>
+                    <input type="text" placeholder="Фамилия" required/>
+                    <input type="tel" placeholder="+375(__)___-__-__"  required pattern="+375([0-9]{2})[0-9]{3}-[0-9]{2}-[0-9]{2}" minlength="17" maxlength="17" />
                 </div>
             </div>
-
-                <button  class="">Зарегистрироваться</button>
-
+            <br>
+                <button  class="registrar">Зарегистрироваться</button>
         </form>
-
     </div>
 </div>
 </body>
